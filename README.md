@@ -1,0 +1,1 @@
+# amigopsycho.life
