@@ -7,26 +7,26 @@
     <!-- Add Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
     <!-- Add your Firebase configuration -->
     <script src="firebase-config.js"></script>
     <style>
-        .post {
-                  background-color: #000;
-                  border: 2px solid #ff0; /* Yellow border */
-                  padding: 20px;
-                  margin-bottom: 20px;
-              }
-              
-        .post h2 {
-                  color: #fff; /* White text for post titles */
-              }
-              
-        .post p {
-                  color: #ccc; /* Light gray text for post content */
-              }
-
+        /* Styles here */
+        .login-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-container button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .login-container button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -37,6 +37,10 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
+        <!-- Add login/logout button -->
+        <div id="auth-container">
+            <!-- Authentication buttons will be displayed here -->
+        </div>
     </nav>
     <div class="container">
         <!-- Blog posts will be displayed here -->
